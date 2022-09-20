@@ -14,12 +14,12 @@ class ScreenRepo {
     private val clazzLoader =
         object {}.javaClass.classLoader
     private val coroutineScope = CoroutineScope(SupervisorJob() + Dispatchers.Main)
-    suspend fun getMainScreen(): Flow<WidgetObj> {
+    suspend fun getMainScreen(path: String): Flow<WidgetObj> {
         return flow<WidgetObj> {
             val widgetObj: WidgetObj
             withContext(Dispatchers.IO) {
                 val input =
-                    clazzLoader?.getResourceAsStream("res/raw/column_layout.json")?.bufferedReader()
+                    clazzLoader?.getResourceAsStream("res/raw/$path")?.bufferedReader()
                         ?.readText()!!
                 widgetObj = Json.decodeFromString<WidgetObj>(input)
             }

@@ -1,0 +1,47 @@
+{
+  "schema": {
+    "type": "Column",
+    "version": "1.0.0"
+  },
+  "data": {
+    "elements": [
+      {
+        "schema": {
+          "type": "Row",
+          "version": "1.0.0"
+        },
+        "data": {
+          "elements": [
+            {
+              "schema": {
+                "type": "TextView",
+                "version": "1.0.0"
+              },
+              "data": {
+                "text": "Text1"
+              }
+            },
+            {
+              "schema": {
+                "type": "TextView",
+                "version": "1.0.0"
+              },
+              "data": {
+                "text": "Text2"
+              }
+            },
+            {
+              "schema": {
+                "type": "TextView",
+                "version": "1.0.0"
+              },
+              "data": {
+                "text": "Text3"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

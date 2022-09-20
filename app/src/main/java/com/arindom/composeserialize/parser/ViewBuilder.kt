@@ -10,17 +10,17 @@ interface ViewBuilder {
 }
 
 sealed class Compose {
-    data class Success(val buildView: @Composable (eventProcessor: MutableSharedFlow<Any>?) -> Unit) :
+    data class Success(val buildView: @Composable () -> Unit) :
         Compose()
 
     data class Error(val exception: Exception) : Compose()
 }
 
 @Composable
-fun Compose.Render(eventProcessor: MutableSharedFlow<Any>?) {
+fun Compose.Render() {
     when (this) {
         is Compose.Error -> Text(text = this.exception.message ?: "")
-        is Compose.Success -> this.buildView.invoke(eventProcessor)
+        is Compose.Success -> this.buildView.invoke()
     }
 }
 

@@ -21,7 +21,7 @@ data class ColumnWidgetObj(
                     .padding(16.dp)
             ) {
                 data.elements.forEach { widgetObj ->
-                    widgetObj.getCompose().Render(it)
+                    widgetObj.getCompose().Render()
                     Spacer(modifier = Modifier.padding(bottom = 8.dp))
                 }
             }

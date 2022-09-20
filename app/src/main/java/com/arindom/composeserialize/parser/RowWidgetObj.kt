@@ -16,7 +16,7 @@ data class RowWidgetObj(
         return Compose.Success {
             Row() {
                 data.elements.forEach { widgetObj ->
-                    widgetObj.getCompose().Render(it)
+                    widgetObj.getCompose().Render()
                     Spacer(modifier = Modifier.padding(end = 8.dp))
                 }
             }

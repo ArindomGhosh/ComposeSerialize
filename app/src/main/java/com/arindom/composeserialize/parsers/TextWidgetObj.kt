@@ -1,4 +1,4 @@
-package com.arindom.composeserialize.parser
+package com.arindom.composeserialize.parsers
 
 import androidx.compose.material.Text
 import kotlinx.serialization.Serializable

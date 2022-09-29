@@ -1,10 +1,6 @@
-package com.arindom.composeserialize.models
+package com.arindom.composeserialize.parsers
 
 import androidx.compose.material.Text
-import com.arindom.composeserialize.parser.Compose
-import com.arindom.composeserialize.parser.Schema
-import com.arindom.composeserialize.parser.ViewElement
-import com.arindom.composeserialize.parser.WidgetObj
 import kotlinx.serialization.Serializable
 
 @Serializable

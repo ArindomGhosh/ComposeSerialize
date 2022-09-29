@@ -1,8 +1,8 @@
 package com.arindom.composeserialize
 
 import android.app.Application
-import com.arindom.composeserialize.models.ImageViewWidgetObj
-import com.arindom.composeserialize.parser.*
+import com.arindom.composeserialize.parsers.ImageViewWidgetObj
+import com.arindom.composeserialize.parsers.*
 
 class ComposeSerialApplication:Application() {
     override fun onCreate() {
@@ -12,7 +12,9 @@ class ComposeSerialApplication:Application() {
             "Row" to RowWidgetObj.serializer(),
             "TextView" to TextWidgetObj.serializer(),
             "ImageView" to ImageViewWidgetObj.serializer(),
-            "CustomView" to CustomWidgetObj.serializer()
+            "CustomView" to CustomWidgetObj.serializer(),
+            "Card" to CardWidgetObj.serializer(),
+            "CircleShape" to CircleShapeWidgetObj.serializer(),
         )
     }
 }

@@ -93,7 +93,8 @@
         },
         "data": {
           "text": "Enter Value",
-          "buttonText": "Submit"
+          "buttonText": "Submit",
+          "onClick": "android-app://screen.presentation.composeserialize.arindom.com/screen_three.json"
         }
       }
 

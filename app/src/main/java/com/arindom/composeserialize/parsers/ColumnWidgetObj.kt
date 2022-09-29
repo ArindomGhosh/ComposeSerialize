@@ -1,9 +1,6 @@
-package com.arindom.composeserialize.parser
+package com.arindom.composeserialize.parsers
 
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import kotlinx.serialization.Serializable
@@ -11,14 +8,15 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class ColumnWidgetObj(
     override val schema: Schema,
-    override val data: ViewElements
+    override val data: ViewElementSL.MultiElement
 ) : WidgetObj(), ViewGroup {
     override fun getCompose(): Compose {
         return Compose.Success {
             Column(
                 modifier = Modifier
-                    .fillMaxSize()
-                    .padding(16.dp)
+                    .fillMaxWidth()
+                    .padding(16.dp),
+                verticalArrangement = Arrangement.Center
             ) {
                 data.elements.forEach { widgetObj ->
                     widgetObj.getCompose().Render()

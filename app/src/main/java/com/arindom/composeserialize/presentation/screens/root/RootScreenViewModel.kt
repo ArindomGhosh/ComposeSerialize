@@ -1,4 +1,4 @@
-package com.arindom.composeserialize.presentation.screens.screentwo
+package com.arindom.composeserialize.presentation.screens.root
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -8,14 +8,14 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 
-class ScreenTwoViewModel:ViewModel() {
+class RootScreenViewModel : ViewModel() {
     private val _uiState: MutableStateFlow<UiState> = MutableStateFlow(UiState())
     private val screenRepo = ScreenRepo()
     val uiState = _uiState.asStateFlow()
 
-    fun fetchMainScreen(){
+    fun fetchMainScreen(path:String){
         viewModelScope.launch {
-            screenRepo.getMainScreen("screen_two.json")
+            screenRepo.getMainScreen(path)//"res/raw/screen_one.json"
                 .onEach {widgetObj ->
                     _uiState.value = _uiState.value.copy(
                         data = widgetObj

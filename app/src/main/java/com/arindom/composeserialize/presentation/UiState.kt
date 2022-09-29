@@ -1,7 +1,7 @@
 package com.arindom.composeserialize.presentation
 
-import com.arindom.composeserialize.parser.DefaultWidget
-import com.arindom.composeserialize.parser.WidgetObj
+import com.arindom.composeserialize.parsers.DefaultWidget
+import com.arindom.composeserialize.parsers.WidgetObj
 
 data class UiState(
     val isLoading: Boolean = false,

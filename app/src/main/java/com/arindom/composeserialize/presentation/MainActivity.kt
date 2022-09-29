@@ -18,7 +18,7 @@ import androidx.navigation.navDeepLink
 import com.arindom.composeserialize.presentation.routes.AmpNavigationImpl
 import com.arindom.composeserialize.presentation.routes.LocalAmpNavigation
 import com.arindom.composeserialize.presentation.routes.Route
-import com.arindom.composeserialize.presentation.screens.screenone.ScreenOne
+import com.arindom.composeserialize.presentation.screens.root.ScreenOne
 import com.arindom.composeserialize.ui.theme.ComposeSerializeTheme
 
 const val uriScreen = "android-app://screen.presentation.composeserialize.arindom.com"
@@ -68,7 +68,6 @@ fun NavGraph(
                 uriPattern = "$uriScreen/{screenName}"
             })
         ) {
-            println(it.arguments?.getString("screenName"))
             ScreenOne(
                 it.arguments?.getString("screenName") ?: "screen_one.json"
             )

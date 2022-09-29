@@ -1,4 +1,4 @@
-package com.arindom.composeserialize.presentation.screens.screenone
+package com.arindom.composeserialize.presentation.screens.root
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -11,7 +11,7 @@ import com.arindom.composeserialize.presentation.widgets.CommonRootWidget
 fun ScreenOne(
     path:String,
     modifier: Modifier = Modifier,
-    mainViewModel: ScreenOneViewModel = viewModel(),
+    mainViewModel: RootScreenViewModel = viewModel(),
 ) {
     mainViewModel.fetchMainScreen(path)
     val uiState by mainViewModel.uiState.collectAsState()

@@ -1,0 +1,209 @@
+{
+  "schema": {
+    "type": "Column",
+    "version": "1.0.0"
+  },
+  "data": {
+    "elements": [
+      {
+        "schema": {
+          "type": "Card",
+          "version": "1.0.0"
+        },
+        "data": {
+          "element": {
+            "schema": {
+              "type": "Column",
+              "version": "1.0.0"
+            },
+            "data": {
+              "elements": [
+                {
+                  "schema": {
+                    "type": "TextView",
+                    "version": "1.0.0"
+                  },
+                  "data": {
+                    "text": "Text1"
+                  }
+                },
+                {
+                  "schema": {
+                    "type": "TextView",
+                    "version": "1.0.0"
+                  },
+                  "data": {
+                    "text": "Text2"
+                  }
+                },
+                {
+                  "schema": {
+                    "type": "TextView",
+                    "version": "1.0.0"
+                  },
+                  "data": {
+                    "text": "Text3"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "schema": {
+          "type": "Card",
+          "version": "1.0.0"
+        },
+        "data": {
+          "element": {
+            "schema": {
+              "type": "Column",
+              "version": "1.0.0"
+            },
+            "data": {
+              "elements": [
+                {
+                  "schema": {
+                    "type": "TextView",
+                    "version": "1.0.0"
+                  },
+                  "data": {
+                    "text": "Text1"
+                  }
+                },
+                {
+                  "schema": {
+                    "type": "TextView",
+                    "version": "1.0.0"
+                  },
+                  "data": {
+                    "text": "Text2"
+                  }
+                },
+                {
+                  "schema": {
+                    "type": "TextView",
+                    "version": "1.0.0"
+                  },
+                  "data": {
+                    "text": "Text3"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "schema": {
+          "type": "Card",
+          "version": "1.0.0"
+        },
+        "data": {
+          "element": {
+            "schema": {
+              "type": "Column",
+              "version": "1.0.0"
+            },
+            "data": {
+              "elements": [
+                {
+                  "schema": {
+                    "type": "TextView",
+                    "version": "1.0.0"
+                  },
+                  "data": {
+                    "text": "Text1"
+                  }
+                },
+                {
+                  "schema": {
+                    "type": "TextView",
+                    "version": "1.0.0"
+                  },
+                  "data": {
+                    "text": "Text2"
+                  }
+                },
+                {
+                  "schema": {
+                    "type": "TextView",
+                    "version": "1.0.0"
+                  },
+                  "data": {
+                    "text": "Text3"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "schema": {
+          "type": "Card",
+          "version": "1.0.0"
+        },
+        "data": {
+          "element": {
+            "schema": {
+              "type": "Row",
+              "version": "1.0.0"
+            },
+            "data": {
+              "elements": [
+                {
+                  "schema": {
+                    "type": "CircleShape",
+                    "version": "1.0.0"
+                  },
+                  "data": {
+                    "size": 50
+                  }
+                },
+                {
+                  "schema": {
+                    "type": "Column",
+                    "version": "1.0.0"
+                  },
+                  "data": {
+                    "elements": [
+                      {
+                        "schema": {
+                          "type": "TextView",
+                          "version": "1.0.0"
+                        },
+                        "data": {
+                          "text": "Text1"
+                        }
+                      },
+                      {
+                        "schema": {
+                          "type": "TextView",
+                          "version": "1.0.0"
+                        },
+                        "data": {
+                          "text": "Text2"
+                        }
+                      },
+                      {
+                        "schema": {
+                          "type": "TextView",
+                          "version": "1.0.0"
+                        },
+                        "data": {
+                          "text": "Text3"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

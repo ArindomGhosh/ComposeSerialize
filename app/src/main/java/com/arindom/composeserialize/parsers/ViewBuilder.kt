@@ -1,9 +1,7 @@
-package com.arindom.composeserialize.parser
+package com.arindom.composeserialize.parsers
 
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
-import kotlinx.coroutines.flow.MutableSharedFlow
-import kotlin.reflect.KClass
 
 interface ViewBuilder {
     fun getCompose(): Compose

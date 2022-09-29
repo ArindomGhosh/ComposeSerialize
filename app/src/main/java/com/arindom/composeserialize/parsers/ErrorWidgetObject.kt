@@ -1,4 +1,4 @@
-package com.arindom.composeserialize.parser
+package com.arindom.composeserialize.parsers
 
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.JsonElement

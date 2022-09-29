@@ -1,11 +1,9 @@
-package com.arindom.composeserialize.parser
+package com.arindom.composeserialize.parsers
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.Text
 import androidx.compose.ui.Modifier
-import kotlinx.coroutines.flow.MutableSharedFlow
-import kotlinx.coroutines.flow.SharedFlow
 import kotlinx.serialization.DeserializationStrategy
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.Serializable
@@ -14,10 +12,8 @@ import kotlinx.serialization.json.JsonElement
 import kotlinx.serialization.json.jsonObject
 import kotlinx.serialization.json.jsonPrimitive
 
-
 @Serializable(with = WidgetObjectSerializer::class)
 abstract class WidgetObj : ViewBuilder, Metadata
-
 
 @Serializable
 data class DefaultWidget(
@@ -42,17 +38,24 @@ interface Metadata {
 }
 
 interface ViewGroup {
-    val data: ViewElements
+    val data: ViewElementSL
 }
 
 interface ViewElement<ViewType> {
     val data: ViewType
 }
 
-@Serializable
-data class ViewElements(
-    val elements: List<WidgetObj>
-)
+sealed interface ViewElementSL {
+    @Serializable
+    data class MultiElement(
+        val elements: List<WidgetObj>
+    ):ViewElementSL
+
+    @Serializable
+    data class SingleElement(
+        val element: WidgetObj
+    ):ViewElementSL
+}
 
 @Serializable
 data class Schema(

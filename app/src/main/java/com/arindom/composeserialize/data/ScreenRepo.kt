@@ -1,6 +1,6 @@
 package com.arindom.composeserialize.data
 
-import com.arindom.composeserialize.parser.WidgetObj
+import com.arindom.composeserialize.parsers.WidgetObj
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob

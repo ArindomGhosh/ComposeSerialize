@@ -13,6 +13,7 @@ val LocalAmpNavigation =  staticCompositionLocalOf <AmpNavigation>{ error("AmpNa
 
 class AmpNavigationImpl(private val navController: NavController):AmpNavigation{
     override fun navigateToUri(uri: String) {
+
         val request = NavDeepLinkRequest.Builder
             .fromUri(uri.toUri())
             .build()
